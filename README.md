@@ -1,31 +1,31 @@
-<h1>Informações<h1>
+<h1>Informações</h1>
 
-<h2>Dependencias<h2>
+<h2>Dependencias</h2>
 Para rodar a aplicação é necessário a utilização e instalação de:
-<h3>Axios<h3>
-<h4>yarn add axios<h4>
+<h3>Axios</h3>
+<h4>yarn add axios</h4>
 
-<h3>Instalar dependendencias da aplicação<h3>
-<h4>yarn install -y<h4>
+<h3>Instalar dependendencias da aplicação</h3>
+<h4>yarn install -y</h4>
 -y É um parametro para aceite automatico das dependencias.
 
-<h2>Aplicação<h2>
+<h2>Aplicação</h2>
 
 Para rodar a aplicação em DEV utilize:
-<h3>yarn start<h3>
+<h3>yarn start</h3>
 
 Para iniciar build para PRD utilize: 
-<h3>yarn build<h3>
+<h3>yarn build</h3>
 
 e posteriormente utilize:
-<h3>serve -s build -l 3000<h3>
+<h3>serve -s build -l 3000</h3>
 
 A aplicação ficara rodando em:
 <h3>localhost:3000</h3>
 
 
 
-<h2>API<h2>
+<h2>API</h2>
 A API disponibilizada em GraphQL não possuia muitos dados, sendo assim, só serão mostrado em tela os dados que possuirem cadastros na API.
 A aplicação já está modelada para que idependente do numero de infomações, todas serão exibidas
 
