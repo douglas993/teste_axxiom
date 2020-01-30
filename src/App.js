@@ -50,6 +50,7 @@ return (
   {show && 
   <div id='data'>
   <table className='table table-dark'>
+    {dados.map((rest) => 
     <tbody>
       <tr>
         <th>Nome</th>
@@ -61,15 +62,18 @@ return (
         <th>Estado</th>
       </tr>
       <tr>
-        <th>{dados ? dados[0].nome : 'default'}</th>
-        <th>{dados ? dados[0].cpf : 'default'}</th>
-        <th>{dados ? dados[0].enderecos[0].logradouro : 'default'}</th>
-        <th>{dados ? dados[0].enderecos[0].numero : 'default'}</th>
-        <th>{dados ? dados[0].enderecos[0].bairro : 'default'}</th>
-        <th>{dados ? dados[0].enderecos[0].municipio : 'default'}</th>
-        <th>{dados ? dados[0].enderecos[0].estado : 'default'}</th>
+        <th>{rest ? rest.nome : 'default'}</th>
+        <th>{rest ? rest.cpf : 'default'}</th>
+        {rest.enderecos.map((endereco) => <>
+        <th>{rest ? endereco.logradouro : 'default'}</th>
+        <th>{rest ? endereco.numero : 'default'}</th>
+        <th>{rest ? endereco.bairro : 'default'}</th>
+        <th>{rest ? endereco.municipio : 'default'}</th>
+        <th>{rest ? endereco.estado : 'default'}</th>
+        </>)}
       </tr>
     </tbody>
+     )}
   </table>
   </div>}
   </>
